@@ -1,0 +1,38 @@
+[2025-03-30T11:34:14.804+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-30T11:34:14.810+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dowload_rocket_launches.get_pictures manual__2025-03-30T11:34:10.476738+00:00 [queued]>
+[2025-03-30T11:34:14.868+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dowload_rocket_launches.get_pictures manual__2025-03-30T11:34:10.476738+00:00 [queued]>
+[2025-03-30T11:34:14.868+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-30T11:34:14.873+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): get_pictures> on 2025-03-30 11:34:10.476738+00:00
+[2025-03-30T11:34:14.876+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=207) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-30T11:34:14.876+0000] {standard_task_runner.py:72} INFO - Started process 208 to run task
+[2025-03-30T11:34:14.877+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dowload_rocket_launches', 'get_pictures', 'manual__2025-03-30T11:34:10.476738+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/dowload_rocker_launches.py', '--cfg-path', '/tmp/tmpqih21chg']
+[2025-03-30T11:34:14.877+0000] {standard_task_runner.py:105} INFO - Job 45: Subtask get_pictures
+[2025-03-30T11:34:14.891+0000] {task_command.py:467} INFO - Running <TaskInstance: dowload_rocket_launches.get_pictures manual__2025-03-30T11:34:10.476738+00:00 [running]> on host 9bd2f46db7c9
+[2025-03-30T11:34:14.915+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dowload_rocket_launches' AIRFLOW_CTX_TASK_ID='get_pictures' AIRFLOW_CTX_EXECUTION_DATE='2025-03-30T11:34:10.476738+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-30T11:34:10.476738+00:00'
+[2025-03-30T11:34:14.915+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-30T11:34:14.916+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-30T11:34:14.916+0000] {logging_mixin.py:190} INFO - Current task name:get_pictures state:running start_date:2025-03-30 11:34:14.810705+00:00
+[2025-03-30T11:34:14.916+0000] {logging_mixin.py:190} INFO - Dag name:dowload_rocket_launches and current dag run status:running
+[2025-03-30T11:34:14.916+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-30T11:34:17.956+0000] {logging_mixin.py:190} INFO - Downloaded https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_7a_image_20210311201838.jpg to /tmp/images/long_march_7a_image_20210311201838.jpg
+[2025-03-30T11:34:20.855+0000] {logging_mixin.py:190} INFO - Downloaded https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg to /tmp/images/spectrum_on_the_image_20250321072643.jpeg
+[2025-03-30T11:34:22.664+0000] {logging_mixin.py:190} INFO - Downloaded https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png to /tmp/images/falcon2520925_image_20221009234147.png
+[2025-03-30T11:34:24.440+0000] {logging_mixin.py:190} INFO - Downloaded https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/firefly_alpha_l_image_20240605174156.jpeg to /tmp/images/firefly_alpha_l_image_20240605174156.jpeg
+[2025-03-30T11:34:26.020+0000] {logging_mixin.py:190} INFO - Downloaded https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210914155606.jpeg to /tmp/images/falcon2520925_image_20210914155606.jpeg
+[2025-03-30T11:34:27.593+0000] {logging_mixin.py:190} INFO - Downloaded https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long2520march25202d_image_20190222031211.jpeg to /tmp/images/long2520march25202d_image_20190222031211.jpeg
+[2025-03-30T11:34:29.423+0000] {logging_mixin.py:190} INFO - Downloaded https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png to /tmp/images/falcon2520925_image_20221009234147.png
+[2025-03-30T11:34:31.792+0000] {logging_mixin.py:190} INFO - Downloaded https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_6_image_20210709074933.jpg to /tmp/images/long_march_6_image_20210709074933.jpg
+[2025-03-30T11:34:33.959+0000] {logging_mixin.py:190} INFO - Downloaded https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png to /tmp/images/falcon2520925_image_20221009234147.png
+[2025-03-30T11:34:35.790+0000] {logging_mixin.py:190} INFO - Downloaded https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png to /tmp/images/falcon2520925_image_20221009234147.png
+[2025-03-30T11:34:35.794+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-30T11:34:35.826+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-30T11:34:35.826+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=dowload_rocket_launches, task_id=get_pictures, run_id=manual__2025-03-30T11:34:10.476738+00:00, execution_date=20250330T113410, start_date=20250330T113414, end_date=20250330T113435
+[2025-03-30T11:34:35.843+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-30T11:34:35.843+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-30T11:34:35.844+0000] {logging_mixin.py:190} INFO - Dag name:dowload_rocket_launches queued_at:2025-03-30 11:34:10.493334+00:00
+[2025-03-30T11:34:35.844+0000] {logging_mixin.py:190} INFO - Task hostname:9bd2f46db7c9 operator:PythonOperator
+[2025-03-30T11:34:35.858+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-30T11:34:35.875+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-30T11:34:35.876+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
